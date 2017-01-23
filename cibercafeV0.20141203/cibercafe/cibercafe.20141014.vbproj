@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{547FEAE7-305D-4EAA-BC3E-CC811F7C65C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>cibercafe.20141014</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\OrdealDesktop\Nueva carpeta\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://bit.ly/Sergio94Mora</SupportUrl>
+    <ProductName>Cibercafe</ProductName>
+    <PublisherName>Sergio Mora - Andres Quezada</PublisherName>
+    <SuiteName>Cibercafe</SuiteName>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>0.2014.1014.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>cibercafe.20141014.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>cibercafe.20141014.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Imagenes\personal5.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>81E864DC606AD03841B719BFE3205282D8B4BDA3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>cibercafe.20141011.02_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.4\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clases\ConexionDBMS\Connection.vb" />
+    <Compile Include="Clases\DataSet\cibercafe_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cibercafe_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\ConexionDBMS\mod_Conex_global.vb" />
+    <Compile Include="Clases\Persistencia\CajaDAO.vb" />
+    <Compile Include="Clases\Persistencia\CajaVO.vb" />
+    <Compile Include="Clases\Persistencia\ClienteDAO.vb" />
+    <Compile Include="Clases\Persistencia\ClienteVO.vb" />
+    <Compile Include="Clases\Persistencia\HistorialSesionesTrabDAO.vb" />
+    <Compile Include="Clases\Persistencia\HistorialSesionesTrabVO.vb" />
+    <Compile Include="Clases\Persistencia\LoginDAO.vb" />
+    <Compile Include="Clases\Persistencia\ProductoDAO.vb" />
+    <Compile Include="Clases\Persistencia\ProductoVO.vb" />
+    <Compile Include="Clases\Persistencia\ProveedoresDAO.vb" />
+    <Compile Include="Clases\Persistencia\ProveedoresVO.vb" />
+    <Compile Include="Clases\Persistencia\TrabajadorDAO.vb" />
+    <Compile Include="Clases\Persistencia\TrabajadorVO.vb" />
+    <Compile Include="Clases\Utilitario\Fono.vb" />
+    <Compile Include="Clases\Utilitario\Rut.vb" />
+    <Compile Include="Modulos\CajeroEnSesion.vb" />
+    <Compile Include="Formularios\cancelar_arriendo.Designer.vb">
+      <DependentUpon>cancelar_arriendo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\cancelar_arriendo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\asignar_categoria_producto.Designer.vb">
+      <DependentUpon>asignar_categoria_producto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\asignar_categoria_producto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\consultar_stock.Designer.vb">
+      <DependentUpon>consultar_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\consultar_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\cuadrar_caja.Designer.vb">
+      <DependentUpon>cuadrar_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\cuadrar_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\equipos\class_datos.vb" />
+    <Compile Include="Formularios\Mantenedores\equipos\class_datos_consola.vb" />
+    <Compile Include="Formularios\Mantenedores\equipos\class_int.vb" />
+    <Compile Include="Formularios\Mantenedores\equipos\class_int_consola.vb" />
+    <Compile Include="Formularios\Mantenedores\equipos\mantenedor_equipos.Designer.vb">
+      <DependentUpon>mantenedor_equipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\equipos\mantenedor_equipos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ajustar_stock.Designer.vb">
+      <DependentUpon>ajustar_stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ajustar_stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\arrendar.Designer.vb">
+      <DependentUpon>arrendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\arrendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\anular_venta.Designer.vb">
+      <DependentUpon>anular_venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\anular_venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\apertura_caja.Designer.vb">
+      <DependentUpon>apertura_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\apertura_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\ingreso_factura.Designer.vb">
+      <DependentUpon>ingreso_factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\ingreso_factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_categoria.Designer.vb">
+      <DependentUpon>mantenedor_categoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_categoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_clientes.Designer.vb">
+      <DependentUpon>mantenedor_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_productos.Designer.vb">
+      <DependentUpon>mantenedor_productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_proveedores.Designer.vb">
+      <DependentUpon>mantenedor_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_trabajadores.Designer.vb">
+      <DependentUpon>mantenedor_trabajadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\mantenedor_trabajadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesando.Designer.vb">
+      <DependentUpon>Procesando.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Procesando.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\venta.Designer.vb">
+      <DependentUpon>venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ventana_menu.Designer.vb">
+      <DependentUpon>ventana_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ventana_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenedores\equipos\mod_cosulta.vb" />
+    <Compile Include="Reportes\Reportes_Generador.Designer.vb">
+      <DependentUpon>Reportes_Generador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes_Generador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\ajustar_stock.resx">
+      <DependentUpon>ajustar_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\arrendar.resx">
+      <DependentUpon>arrendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\cancelar_arriendo.resx">
+      <DependentUpon>cancelar_arriendo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\anular_venta.resx">
+      <DependentUpon>anular_venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\apertura_caja.resx">
+      <DependentUpon>apertura_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\asignar_categoria_producto.resx">
+      <DependentUpon>asignar_categoria_producto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\consultar_stock.resx">
+      <DependentUpon>consultar_stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\cuadrar_caja.resx">
+      <DependentUpon>cuadrar_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\ingreso_factura.resx">
+      <DependentUpon>ingreso_factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\mantenedor_categoria.resx">
+      <DependentUpon>mantenedor_categoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\mantenedor_clientes.resx">
+      <DependentUpon>mantenedor_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\mantenedor_productos.resx">
+      <DependentUpon>mantenedor_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\mantenedor_proveedores.resx">
+      <DependentUpon>mantenedor_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\mantenedor_trabajadores.resx">
+      <DependentUpon>mantenedor_trabajadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesando.resx">
+      <DependentUpon>Procesando.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\venta.resx">
+      <DependentUpon>venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ventana_menu.resx">
+      <DependentUpon>ventana_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenedores\equipos\mantenedor_equipos.resx">
+      <DependentUpon>mantenedor_equipos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Informe_Productos.rdlc" />
+    <EmbeddedResource Include="Reportes\Reportes_Generador.resx">
+      <DependentUpon>Reportes_Generador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Clases\DataSet\cibercafe_DataSet.xsc">
+      <DependentUpon>cibercafe_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Clases\DataSet\cibercafe_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>cibercafe_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Clases\DataSet\cibercafe_DataSet.xss">
+      <DependentUpon>cibercafe_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Imagenes\login.png" />
+    <Content Include="Imagenes\personal5.ico" />
+    <None Include="Resources\shopping122.png" />
+    <None Include="Resources\shopping111.png" />
+    <None Include="Resources\shopping86.png" />
+    <None Include="Resources\search7.png" />
+    <None Include="Resources\piggy10.png" />
+    <None Include="Resources\personal5.png" />
+    <None Include="Resources\order.png" />
+    <None Include="Resources\multiple25.png" />
+    <None Include="Resources\login12.png" />
+    <None Include="Resources\link5.png" />
+    <None Include="Resources\key60.png" />
+    <None Include="Resources\facebook5.png" />
+    <None Include="Resources\close40.png" />
+    <None Include="Resources\close15.png" />
+    <None Include="Resources\accepted.png" />
+    <None Include="Imagenes\reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="es\Microsoft.VisualBasic.PowerPacks.Vs.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
